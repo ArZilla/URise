@@ -1,1 +1,54 @@
+package helloworld;
 
+public class Main {
+
+    public static void main(String[] args) {
+        // Показать работу со всеми операторами
+        Operators();
+        // Метод, который возвращает результат некоторой формулы
+        int r = 10; //задаем радиус
+        System.out.println("2 * 3.14 * R = " + Formula(r));
+        //Метод, который выводит заданную строку
+        String str = "Hello World";
+        printString(str);
+        //выполнить методом 
+        performFunction();
+    }
+
+    public static void Operators() {
+        int x = 10;
+        int y = 15;
+        System.out.println("a+b="+(x+y));
+        System.out.println("a-b="+(x-y));
+        System.out.println("a/b="+(float)x/y);
+        System.out.println("a*b="+x*y);
+    }
+
+    public static double Formula(int r) {
+        return 2 * 3.14 * r;
+    }
+
+    public static void printString(String str) {
+
+        System.out.println("Вывод текста = " + str);
+    }
+
+    public static void performFunction() {
+        fibonacсi();
+    }
+
+    public static void fibonacсi() {
+        int x = 1, y = 1;
+        int sum = 0;
+        System.out.print("Числа Фибоначчи = ");
+        System.out.print(x + " ");
+        System.out.print(y + " ");
+        for (int i = 0; i < 10; i++) {
+            sum = x + y;
+            x = y;
+            y = sum;
+            System.out.print(sum + " ");
+        }
+        System.out.println();
+    }
+}
