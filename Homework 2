@@ -18,11 +18,36 @@ public class Main {
     public static void Operators() {
         int x = 10;
         int y = 15;
-        System.out.println("a+b="+(x+y));
-        System.out.println("a-b="+(x-y));
-        System.out.println("a/b="+(float)x/y);
-        System.out.println("a*b="+x*y);
+        int z = 20;
+        System.out.println("x+y="+(x+y));
+        System.out.println("x-y="+(x-y));
+        System.out.println("x/y="+(float)x/y);
+        System.out.println("x*y="+x*y);
+        System.out.println("x+1=" + ++x);
+        System.out.println("y-1=" + --y);
+        if (x>y)
+        {
+            System.out.println("x>y");
+        }
+        if (x<y)
+        {
+            System.out.println("x<y");
+        }
+        if (x<y&&x<z)
+        {
+            System.out.println("x<y И x<z");
+        }
+        if (x<y||x<z)
+        {
+            System.out.println("x<y ИЛИ x<z");
+        }   
+        x=y;
+        if (x==y)
+        {
+            System.out.println("x=y");
+        }
     }
+    
 
     public static double Formula(int r) {
         return 2 * 3.14 * r;
@@ -35,6 +60,7 @@ public class Main {
 
     public static void performFunction() {
         fibonacсi();
+        homework1();
     }
 
     public static void fibonacсi() {
@@ -50,5 +76,14 @@ public class Main {
             System.out.print(sum + " ");
         }
         System.out.println();
+    }
+    
+    public static void homework1(){
+    boolean ok = true;
+    int intpercent = 100;
+    double happy = 0.99;
+    char percent = '%';
+    System.out.println("Hello, U-rise!");
+    System.out.println( "There is " + ok + ", that there are " + intpercent + percent + " succes with " + happy + " happiness");
     }
 }
