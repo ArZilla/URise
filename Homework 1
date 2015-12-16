@@ -1,0 +1,13 @@
+package helloworld;
+
+public class Main {
+
+    public static void main(String[] args) {
+    boolean ok = true;
+    int intpercent = 100;
+    double happy = 0.99;
+    char percent = '%';
+    System.out.println("Hello, U-rise!");
+    System.out.println( "There is " + ok + ", that there are " + intpercent + percent + " succes with " + happy + " happiness");
+    }
+}
