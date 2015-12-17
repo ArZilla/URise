@@ -1,0 +1,75 @@
+package helloworld;
+
+public class Main {
+    static int r = 10; //задаем радиус
+    public static void main(String[] args) {
+       
+        
+        System.out.println("2 * 3.14 * R = " + formula());
+        //Homework 3 Test 2
+        testRelational();
+        testTernary();
+        //Homework 3 Test 3
+        byte n = 1;
+        switchCase(n);
+        //Homework 3 Test 4
+        for (int i = 0; i<5; i++)
+        helloWorld();
+         //Homework 3 Test 5
+         int i =1;
+         printNumbers(i);
+        
+    }
+    
+    public static void testRelational()
+    {
+        
+        if (formula()>5)
+        {
+            System.out.println("Радиус > 5");
+        }
+        if (formula()<5)
+        {
+            System.out.println("Радиус < 5");
+        } 
+     }
+    
+    public static void testTernary()
+    {
+        System.out.println((r > 5) ? "R>5" : "R<5");
+    }
+    public static double formula()
+    {
+        return 2 * 3.14 * r;
+    }
+   
+    public static void switchCase(int n)
+    {
+       switch (n)
+       {
+           case 1:
+               testRelational();
+               break;
+           case 2:
+               testTernary();
+               break;
+       }
+    }
+    
+    public static void helloWorld()
+    {
+         String str = "Hello World";
+         System.out.println(str);
+    }
+    
+    public static void printNumbers(int i)
+    {
+        while (i<=10)
+        {
+            System.out.println(i);
+            i++;
+        }
+    }
+}
+
+
